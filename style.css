@@ -1,0 +1,109 @@
+/*# Front-end Style Guide
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+### Primary
+- Green: hsl(75, 94%, 57%)
+### Neutral
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 20%)
+- Dark Grey: hsl(0, 0%, 12%)
+- Off Black: hsl(0, 0%, 8%)
+
+## Typography
+### Body Copy
+- Font size (paragraph): 14px
+
+### Font
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter";
+    font-size: 14px;
+    background-color: var(--Off-Black);
+    color: var(--White);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+.card{
+    background-color: var(--Dark-Grey);
+    width: 375px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border-radius: 1em;
+}
+
+.card__image img{
+    border-radius: 50%;
+    width: 120px;
+    margin-bottom: 1em;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.card__city{
+    color: var(--Green);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+.card__description{
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.card__social-network{
+    background-color: var(--Grey);
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    display: block;
+}
+
+.card__social-network:hover{
+    cursor: pointer;
+    background-color: var(--Green);
+    color: var(--Dark-Grey);
+}
+
+
+.card__social-network:active{
+    background-color: var(--Green);
+    color: var(--Dark-Grey);
+}
